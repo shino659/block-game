@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ブロックゲーム</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <h1>ブロックゲーム</h1>
+      <div class="app__info">
+        <div class="app__stat">スコア: <span id="score">0</span></div>
+        <div class="app__stat">ライン: <span id="lines">0</span></div>
+        <div class="app__stat">レベル: <span id="level">1</span></div>
+      </div>
+    </header>
+
+    <section class="app__content">
+      <canvas id="game" width="300" height="600" aria-label="ブロックゲームの盤面"></canvas>
+      <aside class="app__sidebar">
+        <h2>操作方法</h2>
+        <ul>
+          <li>← → : 左右移動</li>
+          <li>↑ : 回転</li>
+          <li>↓ : ソフトドロップ</li>
+          <li>Space : ハードドロップ</li>
+        </ul>
+        <button id="restart" type="button">リスタート</button>
+      </aside>
+    </section>
+
+    <footer class="app__footer">
+      <p>シンプルなテトリス風ブロックゲーム。ブロックを積んでラインを消そう！</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
